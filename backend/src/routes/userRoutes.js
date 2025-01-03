@@ -22,6 +22,8 @@ import {
   getAllUsers,
 } from "../controllers/auth/adminController.js";
 
+//Routes
+
 const router = express.Router();
 
 router.post("/register", registerUser);
