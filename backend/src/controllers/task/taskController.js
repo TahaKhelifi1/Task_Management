@@ -1,7 +1,8 @@
 import asyncHandler from 'express-async-handler';
-import TaskModel from '../../models/tasks/TaskModel';
+import TaskModel from '../../models/tasks/TaskModel.js';
+
 export const createTask = asyncHandler(async (req, res) => {
-// create a task    
+ 
     try {
         const {title, description, dueDate, priority, status} = req.body;
         if (!title || title.trim() === "") {
