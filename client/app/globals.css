@@ -29,21 +29,7 @@ form > img {
   object-fit: cover;
 }
 
-/* utility*/ 
 
-.u-triangle::before {
-  content: '';
-  position: absolute  ;
-  top: 50% ;
-  left : -7px ;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-right: 8px solid #ffffff;
-  border-bottom: 5px solid transparent;
-  transform: translateY(-50%);
-
-} 
 
 @layer base {
   :root {
@@ -101,11 +87,22 @@ form > img {
   }
 } 
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+.main-layout::-webkit-scrollbar{
+  width: 0px;
+
 }
+
+/* utility*/ 
+.u-triangle::before {
+  content: '';
+  position: absolute  ;
+  top: 50% ;
+  left : -7px ;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 8px solid #ffffff;
+  border-bottom: 5px solid transparent;
+  transform: translateY(-50%);
+
+} 

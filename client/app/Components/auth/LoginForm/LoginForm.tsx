@@ -19,7 +19,7 @@ function LoginForm() {
           Login Now. Don't have an account?{" "}
           <a
             href="/register"
-            className="font-bold text-[#2ECC71] hover:text-[#7263F3] transition-all duration-300"
+            className="font-bold text-[#2E5671] hover:text-[#726773] transition-all duration-300"
           >
             Register here
           </a>
